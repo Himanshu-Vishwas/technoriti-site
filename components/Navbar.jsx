@@ -3,36 +3,7 @@
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
-import { ExploreCard } from '../components';
 
-
-const handleClickScroll =() =>{
-  console.log("soon")
-  const element = document.getElementById('explore');
-  if (element){
-    element.scrollIntoView({behavior:'smooth'});
-  }
-}
-const handleClickScroll2 =() =>{
-  const element = document.getElementById('events');
-  if (element){
-    element.scrollIntoView({behavior:'smooth'});
-  }
-}
-
-const handleClickScroll3 =() =>{
-  const element = document.getElementById('participate');
-  if (element){
-    element.scrollIntoView({behavior:'smooth'});
-  }
-}
-
-const handleClickScroll4 =() =>{
-  const element = document.getElementById('rules');
-  if (element){
-    element.scrollIntoView({behavior:'smooth'});
-  }
-}
 
 const Navbar = () => (
   <motion.nav
@@ -50,11 +21,27 @@ const Navbar = () => (
         TECHNORITI'23
       </h2>
       <div className='nav-menu'>
+      <li id='events'><a href="#about">
+          <div className="w-[100px] flex justify-end sm:-mt-[20px] -mt-[20px] pr-[20px] relative z-10">
+            <img
+              src="/navs/about.png"
+              alt="Events"
+              className="sm:w-[155px] w-[70px] sm:h-[155px] h-[100px] object-contain"
+            />
+          </div>
+        </a></li>
+   
+        <li id='events'><a href="#explore">
+          <div className="w-[100px] flex justify-end sm:-mt-[20px] -mt-[20px] pr-[20px] relative z-10">
+            <img
+              src="/navs/Events.png"
+              alt="Events"
+              className="sm:w-[155px] w-[70px] sm:h-[155px] h-[100px] object-contain"
+            />
+          </div>
+        </a></li>
         
-        <li id='about' class="nav-about">About</li>
-        <li id='events'>Events</li>
-        <li id='participate'>Participate</li>
-        <li id='rules'>Rules</li>
+   
       </div>
       <div className='nav-button'>
         <button className='nav-contact' id="nav-contact-button">Contact Us</button>
