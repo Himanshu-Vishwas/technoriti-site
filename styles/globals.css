@@ -46,6 +46,9 @@
   font-family: "Eudoxus Sans", sans-serif;
 
 }
+.nav-menu li:hover{
+  color: #aaa;
+}
 
 .nav-button{
   color: #000;
