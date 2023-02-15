@@ -39,6 +39,7 @@
   flex-direction: row;
   list-style-type: none;
   color: white;
+  padding-top: 10px;
 }
 .nav-menu li{
   padding: 0px 10px;

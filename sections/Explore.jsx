@@ -36,6 +36,7 @@ const Explore = () => {
             />
           ))}
         </div>
+        
       </motion.div>
     </section>
   );
